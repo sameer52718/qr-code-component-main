@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+
+}
+html{
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .card-content {
+    text-align: center;
+    padding: 10px;
+  }
+.qr-code {
+    padding-top: 8px;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .qr-code img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  h1{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  p{
+    font-size: 10px;
+    padding-top: 15px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+  }
+
+  @media only screen and (max-width : 375px){
+    .card{
+        width: 80%;
+        height: 70%;
+    }
+    .qr-code{
+        padding-top: 15px;
+        width: 90% ;
+        height: 90%;
+    }
+    .card-content{
+        padding: 25px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size:14px; 
+    }
+  }
